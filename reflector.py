@@ -14,7 +14,7 @@ class Server(selector.Server):
 			self.stop()
 		else:
 			for _sock in self.socks:
-				self.send_line(_sock, line)
+				if _sock != sock: self.send_line(_sock, line)
 
 	def on_close(self, sock):
 		pass
