@@ -3,4 +3,4 @@
 
 cfg = {}
 cfg['host'] = ''
-cfg['port'] = ord(u'메')
+cfg['port'] = ord(u'반')
